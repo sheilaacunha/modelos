@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portifólio para apresentar trabalhos feitos para web, venda de serviços.">
+  <meta name="author" content="Editado por Sheila, direitos reservados por bootstrap">
+  <meta name="keywords" content="HTMLS, CSS, js, bootstrap, lading page, website" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="shortcut icon" href="./public/assets/img/favicon.png" type="image/x-icon" />
+  <title>Sheila Acunha - Desenvolvedora Web</title>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
+    
+   .button-float {
+      border-radius: 100%;
+      height: 60px;
+      width: 60px;
+      position: fixed;
+      padding: 0 !important;
+      font-size: 35px;
+      color: #fff;
+      background-color: #25d366;
+      border: none;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-float::before,
+    .button-float::after {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 2px double #25d366;
+      border-radius: 100%;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      top: -5px;
+      animation: animar 1.5s linear infinite;
+      opacity: 0;
+    }
+
+    .button-float::after {
+      animation-delay: .8s;
+    }
+
+    .button-float {
+      bottom: 2rem;
+      right: 1rem;
+    }
+
+    @keyframes animar {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    .button-float:hover {
+      background-color: #25d366 !important;
+      color: #FFDE59;
+      box-shadow: 2px 2px 4px #FFDE59;
+    }
+
+
+  </style>
+</head>
+
+<body class="w3-light-grey">
+
+  <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+  <div class="w3-content" style="max-width:1400px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32">
+      <h1><b>MEU BLOG</b></h1>
+      <p>Bem-vindo ao blog da <span class="w3-tag">Jhnoeh</span></p>
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+      <!-- Blog entries -->
+      <div class="w3-col l8 s12">
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="./public/assets/img/blog.jpg" alt="Nature" style="width:100%">
+          <div class="w3-container">
+            <h3><b>TÍTULO DO TÍTULO</b></h3>
+            <h5>Descrição do título, <span class="w3-opacity">7 de abril de 2014</span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quidem temporibus porro? Nostrum vero at
+              impedit incidunt maxime. Consectetur, aspernatur. Inventore mollitia, numquam est rem voluptatem itaque
+              vero vel officiis!
+              Minus fugit molestias corrupti ducimus provident placeat dolor quo qui soluta, velit in ad nihil fuga
+              laborum numquam quibusdam facere! Architecto expedita soluta commodi numquam excepturi placeat eaque
+              voluptatem quam.
+              Temporibus repudiandae rem modi perferendis officia molestias molestiae, voluptas exercitationem, eius ab
+              adipisci, non ea quidem voluptatum nulla cum nesciunt necessitatibus aut nobis porro. Provident eaque non
+              tenetur quas cupiditate?</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>LEIA MAIS »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comentários</b><span class="w3-tag">0</span></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="./public/assets/img/blog3.jpg" alt="Norway" style="width:100%">
+          <div class="w3-container">
+            <h3><b>ENTRADA DE BLOG</b></h3>
+            <h5>Descrição do título, <span class="w3-opacity">2 de abril de 2014</span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque aliquid molestiae vel laudantium
+              distinctio inventore nam autem? Distinctio perspiciatis fugit magnam? Velit facere tempore non ab expedita
+              fugit, eos placeat.
+              Maiores sed recusandae rerum quas velit soluta, ad voluptates amet illo iure, iusto cum cupiditate ab
+              expedita? Commodi eligendi, illum omnis ipsa ad suscipit modi alias dolorem ex, maxime quaerat!
+              Laboriosam unde dolor nemo repellendus possimus cumque mollitia laborum beatae suscipit libero earum, in
+              fugiat distinctio placeat alias! Aliquid, inventore sequi dolor libero architecto aspernatur hic tenetur
+              ab tempore nisi.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>LEIA MAIS »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comentários  </b> <span class="w3-badge">2</span></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END BLOG ENTRIES -->
+      </div>
+
+      <!-- Introduction menu -->
+      <div class="w3-col l4">
+        <!-- About Card -->
+        <div class="w3-card w3-margin w3-margin-top">
+          <img src="/./public/assets/img/blog1.jpg" style="width:100%">
+          <div class="w3-container w3-white">
+            <h4><b>Meu Nome</b></h4>
+            <p>Apenas eu, eu e eu, explorando o universo do conhecimento. Tenho um coração de amor e um interesse de
+              lorem ipsum e mauris neque quam blog. Quero compartilhar meu mundo com vocês.</p>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Posts -->
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>Posts Populares</h4>
+          </div>
+          <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+              <img src="./public/assets/img/blog5.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Lorem</span><br>
+              <span>Sed mattis nunc</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="./public/assets/img/blog5.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Ipsum</span><br>
+              <span>Praes tinci sed</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="./public/assets/img/blog7.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Dorum</span><br>
+              <span>Ultricies congue</span>
+            </li>
+            <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+              <img src="./public/assets/img/blog7.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Mingsum</span><br>
+              <span>Lorem ipsum dipsum</span>
+            </li>
+          </ul>
+        </div>
+        <hr>
+
+        <!-- Labels / tags -->
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>Tags</h4>
+          </div>
+          <div class="w3-container w3-white">
+            <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- END Introduction Menu -->
+      </div>
+
+      <!-- END GRID -->
+    </div><br>
+
+    <!-- END w3-content -->
+  </div>
+   <a target="_blank" href="https://wa.link/taikr4"
+      class="btn button-float d-flex align-items-center justify-content-center ">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">ANTERIOR</button>
+    <button class="w3-button w3-black w3-padding-large w3-margin-bottom">PRÓXIMO »</button>
+    <p><a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+</body>
+
+</html>

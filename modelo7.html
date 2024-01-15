@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portifólio para apresentar trabalhos feitos para web, venda de serviços.">
+  <meta name="author" content="Editado por Sheila, direitos reservados por bootstrap">
+  <meta name="keywords" content="HTMLS, CSS, js, bootstrap, lading page, website" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="./public/assets/img/favicon.png" type="image/x-icon" />
+  <title>Sheila Acunha - Desenvolvedora Web</title>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+
+      .button-float {
+        border-radius: 100%;
+        height: 60px;
+        width: 60px;
+        position: fixed;
+        padding: 0 !important;
+        font-size: 35px;
+        color: #fff;
+        background-color: #25d366;
+        border: none;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button-float::before,
+      .button-float::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border: 2px double #25d366;
+        border-radius: 100%;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        top: -5px;
+        animation: animar 1.5s linear infinite;
+        opacity: 0;
+      }
+
+      .button-float::after {
+        animation-delay: .8s;
+      }
+
+      .button-float {
+        bottom: 2rem;
+        right: 1rem;
+      }
+
+      @keyframes animar {
+        0% {
+          transform: scale(0.5);
+          opacity: 0;
+
+        }
+
+        50% {
+          opacity: 1;
+        }
+
+        100% {
+          transform: scale(1.2);
+          opacity: 0;
+        }
+      }
+
+      .button-float:hover {
+        background-color: #25d366 !important;
+        color: #FFDE59;
+        box-shadow: 2px 2px 4px #FFDE59;
+      }
+    }
+  </style>
+</head>
+
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="./public/assets/img/avatar_smoke.jpg" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>SOBRE</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>FOTOS</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTATO</p>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">Sou</span> John Doe.</h1>
+      <p>Fotógrafo e Web Designer.</p>
+      <img src="./public/assets/img/portifolio5.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-light-grey">Meu Nome</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eius velit, illo deserunt sint consequatur.
+        Id amet beatae iure necessitatibus expedita molestias quasi quam ex, enim exercitationem illo quis officiis?
+        Voluptatum nostrum doloribus, laudantium temporibus aut vitae unde ducimus totam? Sunt esse adipisci voluptates
+        quidem hic modi doloremque? Distinctio commodi incidunt atque sapiente aliquam voluptatum omnis repellat
+        dignissimos est at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum eos magni ducimus
+        distinctio fugit at ipsum quibusdam, tempora soluta nobis facere ratione quas, saepe perferendis harum commodi
+        optio blanditiis!
+        Dolorem libero velit illum harum ex assumenda alias, quia totam quae recusandae consequatur obcaecati vel
+        officiis quos cupiditate molestias aut ab aspernatur eveniet! Dignissimos repudiandae, velit perspiciatis ipsum
+        exercitationem amet?
+      </p>
+      <h3 class="w3-padding-16 w3-text-light-grey">Skills</h3>
+      <p class="w3-wide">Fotografia</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+      </div>
+      <p class="w3-wide">Web Design</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+      </div>
+      <p class="w3-wide">Photoshop</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      </div><br>
+
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">11+</span><br>
+          Parceiros
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">55+</span><br>
+          Projetos Realizados
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">89+</span><br>
+          Clientes Satisfeitos
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">150+</span><br>
+          Reuniões
+        </div>
+      </div>
+
+      <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <i class="fa fa-download"></i> Baixar Curriculo
+      </button>
+
+      <!-- Grid for pricing tables -->
+      <h3 class="w3-padding-16 w3-text-light-grey">Meu Preço</h3>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">Básico</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Fotografia</li>
+            <li class="w3-padding-16">Outros</li>
+            <li class="w3-padding-16">Algo mais</li>
+            <li class="w3-padding-16">
+              <h2>R$ 99,99</h2>
+              <span class="w3-opacity">por mês</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">Contratar</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Fotografia</li>
+            <li class="w3-padding-16">Outros</li>
+            <li class="w3-padding-16">Algo mais</li>
+            <li class="w3-padding-16">
+              <h2>R$ 199,99</h2>
+              <span class="w3-opacity">por mês</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black">Contratar</button>
+            </li>
+          </ul>
+        </div>
+        <!-- End Grid/Pricing tables -->
+      </div>
+
+      <!-- Testimonials -->
+      <h3 class="w3-padding-24 w3-text-light-grey">Minha Reputação</h3>
+      <img src="./public/assets/img/portifolio.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+        style="width:80px">
+      <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum placeat quo nam natus deserunt, delectus
+        aperiam nesciunt eligendi omnis itaque possimus debitis sed rem! Harum deserunt quaerat omnis soluta.</p><br>
+
+      <img src="./public/assets/img/portifolio1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
+        style="width:80px">
+      <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam asperiores est id minus, optio dolores laudantium
+        sapiente adipisci. Suscipit nemo ipsa veritatis aspernatur quam doloremque quos hic officiis similique mollitia!
+      </p>
+      <!-- End About Section -->
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+      <h2 class="w3-text-light-grey">Minhas Fotos</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <img src="./public/assets/img/portifolio4.jpg" style="width:100%">
+          <img src="./public/assets/img/portifolio6.jpg" style="width:100%">
+          <img src="./public/assets/img/portifolio7.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-half">
+          <img src="./public/assets/img/portifolio9.jpg" style="width:100%">
+          <img src="./public/assets/img/portifolio7.jpg" style="width:100%">
+          <img src="./public/assets/img/portifolio11.jpg" style="width:100%">
+          <img src="./public/assets/img/portifolio12.jpg" style="width:100%">
+        </div>
+        <!-- End photo grid -->
+      </div>
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">Entre em Contato</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Porto Alegre, RS</p>
+        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Telefone: 51 99999-9999</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> E-mail: mail@mail.com</p>
+      </div><br>
+      <p>Vamos entrar em contato. Envie-me uma mensagem:</p>
+
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="E-mail" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Assunto" required name="Subject"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Mensagem"></p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i>Enviar Mensagem
+          </button>
+        </p>
+      </form>
+      <!-- End Contact Section -->
+    </div>
+
+    <a target="_blank" href="https://wa.link/taikr4"
+      class="button-float">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium"><a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          class="w3-hover-text-green">w3.css</a></p>
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+</body>
+
+</html>

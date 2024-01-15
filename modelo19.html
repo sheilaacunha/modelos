@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portifólio para apresentar trabalhos feitos para web, venda de serviços.">
+  <meta name="author" content="Editado por Sheila, direitos reservados por bootstrap">
+  <meta name="keywords" content="HTMLS, CSS, js, bootstrap, lading page, website" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="./public/assets/img/favicon.png" type="image/x-icon" />
+  <title>Sheila Acunha - Desenvolvedora Web</title>
+  <style>
+    
+   .button-float {
+      border-radius: 100%;
+      height: 60px;
+      width: 60px;
+      position: fixed;
+      padding: 0 !important;
+      font-size: 35px;
+      color: #fff;
+      background-color: #25d366;
+      border: none;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-float::before,
+    .button-float::after {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 2px double #25d366;
+      border-radius: 100%;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      top: -5px;
+      animation: animar 1.5s linear infinite;
+      opacity: 0;
+    }
+
+    .button-float::after {
+      animation-delay: .8s;
+    }
+
+    .button-float {
+      bottom: 2rem;
+      right: 1rem;
+    }
+
+    @keyframes animar {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    .button-float:hover {
+      background-color: #25d366 !important;
+      color: #FFDE59;
+      box-shadow: 2px 2px 4px #FFDE59;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Arquitetos</a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#projects" class="w3-bar-item w3-button">Projetos</a>
+        <a href="#about" class="w3-bar-item w3-button">Sobre</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contato</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="./public/assets/img/architect.jpg" alt="Architecture" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span
+          class="w3-hide-small w3-text-light-grey">Arquiteto</span></h1>
+    </div>
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:1564px">
+
+    <!-- Project Section -->
+    <div class="w3-container w3-padding-32" id="projects">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">PROJETOS</h3>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+          <img src="./public/assets/img/arquiteto1.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+          <img src="./public/assets/img/arquiteto2.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+          <img src="./public/assets/img/arquiteto3.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+          <img src="./public/assets/img/arquiteto4.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+          <img src="./public/assets/img/arquiteto1.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+          <img src="./public/assets/img/arquiteto2.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+          <img src="./public/assets/img/arquiteto3.jpg" alt="House" style="width:99%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+          <img src="./public/assets/img/arquiteto4.jpg" alt="House" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">SOBRE</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./public/assets/img/arquiteto8.jpg" alt="John" style="width:100%">
+        <h3>John Doe</h3>
+        <p class="w3-opacity">CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <p><button class="w3-button w3-light-grey w3-block">COntato</button></p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./public/assets/img/arquiteto9.jpg" alt="Jane" style="width:100%">
+        <h3>Jane Doe</h3>
+        <p class="w3-opacity">Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <p><button class="w3-button w3-light-grey w3-block">COntato</button></p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./public/assets/img/arquiteto10.jpg" alt="Mike" style="width:100%">
+        <h3>Mike Ross</h3>
+        <p class="w3-opacity">Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <p><button class="w3-button w3-light-grey w3-block">COntato</button></p>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./public/assets/img/arquiteto11.jpg" alt="Dan" style="width:100%">
+        <h3>Dan Star</h3>
+        <p class="w3-opacity">Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <p><button class="w3-button w3-light-grey w3-block">COntato</button></p>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-32" id="contact">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contato</h3>
+      <p>Vamos entrar em contato e conversar sobre seu próximo projeto.</p>
+      <form action="/action_page.php" target="_blank">
+        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Nome">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="E-mail" required name="Email">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Assunto">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Mensagem">
+        <button class="w3-button w3-black w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
+        </button>
+      </form>
+    </div>
+
+    <!-- Image of location/map -->
+    <div class="w3-container">
+      <img src="./public/assets/img/arquiteto12.jpg" class="w3-image" style="width:100%">
+    </div>
+
+    <!-- End page content -->
+  </div>
+
+
+  <a target="_blank" href="https://wa.link/taikr4"
+      class="btn button-float d-flex align-items-center justify-content-center ">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-16">
+    <p> by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+</body>
+
+</html>

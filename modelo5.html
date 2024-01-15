@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portifólio para apresentar trabalhos feitos para web, venda de serviços.">
+  <meta name="author" content="Editado por Sheila, direitos reservados por bootstrap">
+  <meta name="keywords" content="HTMLS, CSS, js, bootstrap, lading page, website" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="./public/assets/img/favicon.png" type="image/x-icon" />
+  <title>Sheila Acunha - Desenvolvedora Web</title>
+  <style>
+    body {
+      font-family: "Raleway", Arial, sans-serif
+    }
+
+    .w3-row img {
+      margin-bottom: -8px
+    }
+    
+   .button-float {
+      border-radius: 100%;
+      height: 60px;
+      width: 60px;
+      position: fixed;
+      padding: 0 !important;
+      font-size: 35px;
+      color: #fff;
+      background-color: #25d366;
+      border: none;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-float::before,
+    .button-float::after {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 2px double #25d366;
+      border-radius: 100%;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      top: -5px;
+      animation: animar 1.5s linear infinite;
+      opacity: 0;
+    }
+
+    .button-float::after {
+      animation-delay: .8s;
+    }
+
+    .button-float {
+      bottom: 2rem;
+      right: 1rem;
+    }
+
+    @keyframes animar {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    .button-float:hover {
+      background-color: #25d366 !important;
+      color: #FFDE59;
+      box-shadow: 2px 2px 4px #FFDE59;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-content" style="max-width:1500px">
+
+    <!-- Header -->
+    <header class="w3-container w3-xlarge w3-padding-24">
+      <a href="#" class="w3-left w3-button w3-white">Minha Arte</a>
+      <a href="#about" class="w3-right w3-button w3-white">Sobre</a>
+    </header>
+
+    <!-- Photo Grid -->
+    <div class="w3-row">
+      <div class="w3-half">
+        <img src="./public/assets/img/streetart.jpg" style="width:100%">
+        <img src="./public/assets/img/streetart2.jpg" style="width:100%">
+        <img src="./public/assets/img/streetart5.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="./public/assets/img/streetart3.jpg" style="width:100%">
+        <img src="./public/assets/img/streetart4.jpg" style="width:100%">
+      </div>
+    </div>
+
+    <!-- End Page Content -->
+  </div>
+<a target="_blank" href="https://wa.link/taikr4"
+      class="btn button-float d-flex align-items-center justify-content-center ">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  <!-- Footer / About Section -->
+  <footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+    <h2>Sobre</h2>
+    <img src="./public/assets/img/boy.jpg" class="w3-image w3-padding-32" width="300" height="300">
+    <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquid voluptatum nesciunt blanditiis! Amet
+        perferendis, molestias, similique, temporibus quaerat blanditiis in doloremque corporis natus assumenda magni.
+        Perferendis eius architecto necessitatibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+        ipsum voluptatem veritatis fugiat. Ducimus autem a odio sapiente voluptates minima itaque! Inventore quisquam
+        maxime, veniam laborum dolores quam. Quibusdam, autem! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Autem dolor quasi animi, dolores atque expedita, dolore maiores veniam fugit, numquam harum? Blanditiis a
+        obcaecati distinctio, harum voluptas architecto beatae id?
+      </p>
+      <p class="w3-large w3-text-pink">Não hesite em contactar-me!</p>
+      <div class="w3-section">
+        <label><b>Nome</b></label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label><b>E-mail</b></label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label><b>Mensagem</b></label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-dark-grey">Enviar</button>
+    </form>
+    <br>
+    <p> <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+</body>
+
+</html>

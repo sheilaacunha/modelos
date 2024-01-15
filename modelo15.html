@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portifólio para apresentar trabalhos feitos para web, venda de serviços.">
+    <meta name="author" content="Editado por Sheila, direitos reservados por bootstrap">
+    <meta name="keywords" content="HTMLS, CSS, js, bootstrap, lading page, website" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="shortcut icon" href="./public/assets/img/favicon.png" type="image/x-icon" />
+    <title>Sheila Acunha - Desenvolvedora Web</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            border: 10px solid black;
+            background-position: center;
+            background-size: cover;
+            background-image: url("./public/assets/img/cafe3.jpg");
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .button-float {
+            border-radius: 100%;
+            height: 60px;
+            width: 60px;
+            position: fixed;
+            padding: 0 !important;
+            font-size: 35px;
+            color: #fff;
+            background-color: #25d366;
+            border: none;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-float::before,
+        .button-float::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border: 2px double #25d366;
+            border-radius: 100%;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            top: -5px;
+            animation: animar 1.5s linear infinite;
+            opacity: 0;
+        }
+
+        .button-float::after {
+            animation-delay: .8s;
+        }
+
+        .button-float {
+            bottom: 2rem;
+            right: 1rem;
+        }
+
+        @keyframes animar {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        .button-float:hover {
+            background-color: #25d366 !important;
+            color: #FFDE59;
+            box-shadow: 2px 2px 4px #FFDE59;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">Início</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-black">SOBRE</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#where" class="w3-button w3-block w3-black">Lugar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="divheader">
+            <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+                <span class="w3-tag">Aberto das 6h às 17h</span>
+            </div>
+            <div class="w3-display-middle w3-center">
+                <span class="w3-text-white" style="font-size:90px">Café<br>Bar</span>
+            </div>
+            <div class="w3-display-bottomright w3-center w3-padding-large">
+                <span class="w3-text-white">Av do Café 60, Porto Alegre - RS</span>
+            </div>
+
+
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SOBRE O CAFÉ</span></h5>
+                <p>
+                    O Café foi fundado em blabla pelo Sr. Smith em lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Além do nosso menu completo de café expresso e bar de cerveja, servimos café da manhã e almoço
+                    feitos na hora sanduíches, além de uma seleção de acompanhamentos e saladas e outras coisas boas.
+                </p>
+                <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>
+                            Use produtos da natureza para o que vale a pena - mas nunca muito cedo, nem tarde demais."
+                            Fresco é o novo doce.
+                        </i></p>
+                    <p>
+                        Chef, cafeteiro e proprietário: Liam Brown
+                    </p>
+                </div>
+                <img src="./public/assets/img/cafe1.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+                <p><strong>Horário de funcionamento:</strong> todos os dias das 6h às 17h.</p>
+                <p><strong>Endereço: </strong> Av do Café 60, Porto Alegre - RS</p>
+            </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="menu">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MENU</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                        <div class="w3-col s6 tablink">Lanches</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                        <div class="w3-col s6 tablink">Bebidas</div>
+                    </a>
+                </div>
+
+                <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Cesta de Pão</h5>
+                    <p class="w3-text-grey">Variedade de pães e muffins de frutas frescas R$ 5,50</p><br>
+
+                    <h5>Mel de Amêndoa de Granola com Frutas</h5>
+                    <p class="w3-text-grey">Cereais naturais de aveia torrada mel, passas, amêndoas e tâmaras R$ 7.00
+                    </p>
+                    <br>
+
+                    <h5>Waffle Belga</h5>
+                    <p class="w3-text-grey">Massa sabor baunilha com farinha maltada R$ 7,50</p><br>
+
+                    <h5>Ovos mexidos</h5>
+                    <p class="w3-text-grey">Ovos mexidos, pimentão vermelho assado e alho, com cebolinha R$ 7,50</p>
+                    <br>
+
+                    <h5>Panquecas de mirtilo</h5>
+                    <p class="w3-text-grey">Com calda, manteiga e muitas bagas R$ 8,50</p>
+                </div>
+
+                <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Café</h5>
+                    <p class="w3-text-grey">Café comum R$ 2,50</p><br>
+
+                    <h5>Chocolate</h5>
+                    <p class="w3-text-grey">Chocolate expresso ao leite R$ 4.50</p><br>
+
+                    <h5>Corretto</h5>
+                    <p class="w3-text-grey">Whisky e café R$ 5.00</p><br>
+
+                    <h5>Chá gelado</h5>
+                    <p class="w3-text-grey">Chá quente, exceto não quente 3.00</p><br>
+
+                    <h5>Soda</h5>
+                    <p class="w3-text-grey">Coca-Cola, Sprite, Fanta, etc.R$ 2.50</p>
+                </div>
+                <img src="./public/assets/img/coffee.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+            </div>
+        </div>
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ONDE NOS ENCONTRAR</span></h5>
+                <p>Encontre-nos em algum endereço em algum lugar.</p>
+                <img src="./public/assets/img/cafe2.jpg" class="w3-image" style="width:100%">
+                <p><span class="w3-tag">PSIU! </span> Oferecemos serviço completo de catering para qualquer evento,
+                    grande ou pequeno. Nós entender suas necessidades e vamos atender a comida para satisfazer os
+                    critérios mais amplos de todos, ambos olhar e provar.</p>
+                <p><strong>Reserve</strong> uma mesa, peça o especial de hoje ou apenas envie-nos uma mensagem:</p>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required
+                            name="Nome"></p>
+
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
+                            required name="date" value="2020-11-16T20:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem " required
+                            name="Message"></p>
+                    <p><button class="w3-button w3-black" type="submit">ENVIAR MENSAGEM</button></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+    <a target="_blank" href="https://wa.link/taikr4"
+        class="btn button-float d-flex align-items-center justify-content-center ">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p> by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>

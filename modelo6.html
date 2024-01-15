@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portifólio para apresentar trabalhos feitos para web, venda de serviços.">
+  <meta name="author" content="Editado por Sheila, direitos reservados por bootstrap">
+  <meta name="keywords" content="HTMLS, CSS, js, bootstrap, lading page, website" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./public/assets/img/favicon.png" type="image/x-icon" />
+  <title>Sheila Acunha - Desenvolvedora Web</title>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", Arial, Helvetica, sans-serif
+    }
+       .button-float {
+      border-radius: 100%;
+      height: 60px;
+      width: 60px;
+      position: fixed;
+      padding: 0 !important;
+      font-size: 35px;
+      color: #fff;
+      background-color: #25d366;
+      border: none;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-float::before,
+    .button-float::after {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 2px double #25d366;
+      border-radius: 100%;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      top: -5px;
+      animation: animar 1.5s linear infinite;
+      opacity: 0;
+    }
+
+    .button-float::after {
+      animation-delay: .8s;
+    }
+
+    .button-float {
+      bottom: 2rem;
+      right: 1rem;
+    }
+
+    @keyframes animar {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    .button-float:hover {
+      background-color: #25d366 !important;
+      color: #FFDE59;
+      box-shadow: 2px 2px 4px #FFDE59;
+    }
+
+  </style>
+</head>
+
+<body class="w3-light-grey">
+
+  <!-- Navigation Bar -->
+  <div class="w3-bar w3-white w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-red w3-mobile">Logo</a>
+    <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Inicio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-mobile">sobre</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contato</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Botão de ação</a>
+  </div>
+  <!-- Header -->
+  <header class="w3-display-container w3-content" style="max-width:1500px;">
+    <img class="w3-image" src="./public/assets/img/hotel.jpg" alt="The Hotel" style="min-width:1000px" width="1500"
+      height="700">
+  </header>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:1532px;">
+
+    <div class="w3-row-padding w3-padding-16">
+      <div class="w3-third w3-margin-bottom">
+        <img src="./public/assets/img/room_single.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Mobilia Clássica</h3>
+          <h6 class="w3-opacity">Algo Aqui</h6>
+          <p>Algo Aqui</p>
+          <p>15m<sup>2</sup></p>
+          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+          <button class="w3-button w3-block w3-black w3-margin-bottom">
+            Ver Mais
+          </button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="./public/assets/img/room_double.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Mobilia Basica</h3>
+          <h6 class="w3-opacity">Algo Aqui</h6>
+          <p>Algo Aqui</p>
+          <p>25m<sup>2</sup></p>
+          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i
+              class="fa fa-tv"></i></p>
+          <button class="w3-button w3-block w3-black w3-margin-bottom">Ver Mais
+          </button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <img src="./public/assets/img/room_deluxe.jpg" alt="Norway" style="width:100%">
+        <div class="w3-container w3-white">
+          <h3>Mobilia Contemporanea </h3>
+          <h6 class="w3-opacity">Algo Aqui</h6>
+          <p>Algo Aqui</p>
+          <p>40m<sup>2</sup></p>
+          <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i
+              class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+          <button class="w3-button w3-block w3-black w3-margin-bottom">Ver mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding" id="about">
+      <div class="w3-col l4 12">
+        <h3>Sobre</h3>
+        <h6>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laboriosam consequuntur praesentium pariatur
+          quibusdam dolorem iure quisquam ad saepe ipsum, accusamus tenetur qui explicabo id ipsam eligendi impedit ea
+          aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae corporis dolorem. Nemo
+          reprehenderit reiciendis adipisci. Tempore ratione eius sed voluptatum nostrum, exercitationem quam impedit
+          quo ex, corrupti, totam porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum commodi
+          deserunt sit ab assumenda quam? Non cumque voluptatem, beatae accusantium suscipit obcaecati enim, adipisci,
+          dicta quam iusto veritatis. A, nobis?
+        </h6>
+
+      </div>
+      <div class="w3-col l8 12">
+        <!-- Image of location/map -->
+        <img src="./public/assets/img/map.jpg" class="w3-image w3-greyscale" style="width:100%;">
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-large w3-center" style="margin:32px 0">
+      <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i>Av da Esperança, 171 - Porto ALegre, RS</div>
+      <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: (51) 99999-9999</div>
+      <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> E-mail: mail@mail.com</div>
+    </div>
+
+    <div class="w3-panel w3-red w3-leftbar w3-padding-32">
+      <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> On Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Possimus autem delectus animi, porro rerum libero nisi exercitationem reiciendis
+        voluptatum tenetur iure. Ratione corrupti fuga nisi asperiores similique repellendus fugit recusandae.</h6>
+    </div>
+
+    <div class="w3-container">
+      <h3>Algo Aqui</h3>
+      <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, praesentium illo:</h6>
+    </div>
+
+    <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
+      <div class="w3-half w3-margin-bottom">
+        <div class="w3-display-container">
+          <img src="./public/assets/img/cinqueterre.jpg" alt="Cinque Terre" style="width:100%">
+          <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
+        </div>
+      </div>
+      <div class="w3-half">
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <div class="w3-display-container">
+              <img src="./public/assets/img/newyork2.jpg" alt="New York" style="width:100%">
+              <span class="w3-display-bottomleft w3-padding">New York</span>
+            </div>
+          </div>
+          <div class="w3-half w3-margin-bottom">
+            <div class="w3-display-container">
+              <img src="./public/assets/img/sanfran.jpg" alt="San Francisco" style="width:100%">
+              <span class="w3-display-bottomleft w3-padding">San Francisco</span>
+            </div>
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <div class="w3-display-container">
+              <img src="./public/assets/img/pisa.jpg" alt="Pisa" style="width:100%">
+              <span class="w3-display-bottomleft w3-padding">Pisa</span>
+            </div>
+          </div>
+          <div class="w3-half w3-margin-bottom">
+            <div class="w3-display-container">
+              <img src="/./public/assets/img/paris.jpg" alt="Paris" style="width:100%">
+              <span class="w3-display-bottomleft w3-padding">Paris</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-container w3-padding-32 w3-black w3-opacity w3-card w3-hover-opacity-off" style="margin:32px 0;">
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, placeat ex error, iste dolor nobis odio
+        sequi quis possimus eaque officia aliquam, aperiam accusantium harum fuga quidem eveniet consectetur.
+        Temporibus.</h2>
+
+      <button type="button" class="w3-button w3-red w3-margin-top">Botão de ação</button>
+    </div>
+
+    <div class="w3-container" id="contact">
+      <h2>Entre em Contato</h2>
+      <p>Se você tiver alguma dúvida, não hesite em perguntar.</p>
+      <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Porto Alegre, RS<br>
+      <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone:(51) 99999-99999<br>
+      <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> E-mail: mail@mail.com<br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="-Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem" required name="Message">
+        </p>
+        <p><button class="w3-button w3-black w3-padding-large" type="submit">Enviar mensagem</button></p>
+      </form>
+    </div>
+
+    <!-- End page content -->
+  </div>
+
+  <a target="_blank" href="https://wa.link/taikr4"
+      class="btn button-float d-flex align-items-center justify-content-center ">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  <!-- Footer -->
+  <footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+    <h5>Encontre-nos em</h5>
+    <div class="w3-xlarge w3-padding-16">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p><a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+  <!-- Add Google Maps -->
+  <script>
+    function myMap() {
+      myCenter = new google.maps.LatLng(41.878114, -87.629798);
+      var mapOptions = {
+        center: myCenter,
+        zoom: 12, scrollwheel: false, draggable: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+      var marker = new google.maps.Marker({
+        position: myCenter,
+      });
+      marker.setMap(map);
+    }
+  </script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+
+</html>

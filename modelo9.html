@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portifólio para apresentar trabalhos feitos para web, venda de serviços.">
+  <meta name="author" content="Editado por Sheila, direitos reservados por bootstrap">
+  <meta name="keywords" content="HTMLS, CSS, js, bootstrap, lading page, website" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="shortcut icon" href="./public/assets/img/favicon.png" type="image/x-icon" />
+  <title>Sheila Acunha - Desenvolvedora Web</title>
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .w3-half img {
+      margin-bottom: -6px;
+      margin-top: 16px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-half img:hover {
+      opacity: 1
+    }
+       .button-float {
+      border-radius: 100%;
+      height: 60px;
+      width: 60px;
+      position: fixed;
+      padding: 0 !important;
+      font-size: 35px;
+      color: #fff;
+      background-color: #25d366;
+      border: none;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-float::before,
+    .button-float::after {
+      content: '';
+      display: block;
+      position: absolute;
+      border: 2px double #25d366;
+      border-radius: 100%;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      top: -5px;
+      animation: animar 1.5s linear infinite;
+      opacity: 0;
+    }
+
+    .button-float::after {
+      animation-delay: .8s;
+    }
+
+    .button-float {
+      bottom: 2rem;
+      right: 1rem;
+    }
+
+    @keyframes animar {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    .button-float:hover {
+      background-color: #25d366 !important;
+      color: #FFDE59;
+      box-shadow: 2px 2px 4px #FFDE59;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:22px">Fechar Menu</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>Nome<br>Empresa</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+      <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Casa</a>
+      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Serviços</a>
+      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>
+      <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pacotes</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contato</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Nome Empresa</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b>Site de Produtos</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Vitrine.</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+    </div>
+
+    <!-- Photo grid (modal) -->
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="./public/assets/img/produto.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Concrete meets bricks">
+        <img src="./public/assets/img/produtos1.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Light, white and tight scandinavian design">
+        <img src="./public/assets/img/produtos2.jpg" style="width:100%" onclick="onClick(this)"
+          alt="White walls with designer chairs">
+      </div>
+
+      <div class="w3-half">
+        <img src="./public/assets/img/produtos3.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Windows for the atrium">
+        <img src="./public/assets/img/produtos4.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Bedroom and office in one space">
+        <img src="./public/assets/img/produtos5.jpg" style="width:100%" onclick="onClick(this)"
+          alt="Scandinavian design">
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="w3-container" id="services" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Serviços.</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptate consectetur, nam quisquam laudantium .
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci odit nulla! Neque natus mollitia maiores
+        dolores, deleniti fugit molestiae tempora molestias aliquid quisquam, eum distinctio ad repellat a nobis! Lorem
+        ipsum dolor sit amet consectetur, adipisicing elit. Enim dolorum veniam iure doloremque temporibus, inventore
+        consequuntur est autem ab quis voluptatibus corrupti quam debitis magnam quidem illum ipsum quas nostrum?
+        Quibusdam dolore cupiditate facilis atque, quae, ipsam molestias natus commodi quas debitis at, excepturi
+        accusamus? Vel ratione fugit tenetur quas veritatis, ipsum corrupti harum quo vero at quisquam magnam quidem.
+        Atque, blanditiis! Asperiores nam quis dolor eius dolorem aspernatur itaque neque placeat debitis excepturi
+        perferendis repellendus autem iure cum vero, earum tenetur quasi sit nemo exercitationem ut. Veniam, est ut!
+      </p>
+    </div>
+
+    <!-- Designers -->
+    <div class="w3-container" id="designers" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>Lorem, ipsum dolor..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur, ut cum dicta fuga beatae eum
+        libero deserunt quae accusantium fugit saepe corporis nam, nihil officiis, dolore sapiente non voluptas.
+        Consequuntur odio dolorem itaque vitae, nisi asperiores quisquam rerum repudiandae! Sed doloribus at nam aut
+        officia consectetur odio ex, deleniti optio, libero nemo iure reprehenderit quisquam dolore facilis veritatis
+        nesciunt!
+        Quia soluta itaque at quis sint ad distinctio molestias necessitatibus tempora! Sapiente itaque aliquam
+        accusamus suscipit veritatis repellendus laborum neque! Earum incidunt non sapiente blanditiis accusamus
+        corporis dolores. Voluptates, in.
+        Sequi aperiam cumque, corporis voluptate voluptates labore aspernatur, unde expedita, praesentium iste atque
+        animi voluptatibus! Impedit odio quidem praesentium ad voluptatem doloribus vero! Minima dolorum quidem vel
+        fugiat repudiandae rem?
+        At maxime earum necessitatibus dolores optio, quisquam vitae cum asperiores dolorem laboriosam voluptate
+        tempore, distinctio sequi non similique illo odit illum. Officia optio molestias sapiente, recusandae sint ea
+        sit distinctio.
+      </p>
+      <p><b>Nossos designers são cuidadosamente escolhidos:</b>:</p>
+    </div>
+
+    <!-- The Team -->
+    <div class="w3-row-padding w3-grayscale">
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./public/assets/img/team2.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>John Doe</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./public/assets/img/team1.jpg" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>Jane Doe</h3>
+            <p class="w3-opacity">Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="./public/assets/img/team3.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>Mike Ross</h3>
+            <p class="w3-opacity">Architect</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Packages / Pricing Tables -->
+    <div class="w3-container" id="packages" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Pacotes.</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reprehenderit quas, eligendi ex sapiente facilis
+        repellendus, quam laborum enim dolorum saepe excepturi accusamus quaerat delectus quidem voluptate mollitia
+        pariatur rem!
+        Quaerat laudantium eligendi voluptates. Natus ullam tenetur accusantium officiis! Praesentium, blanditiis
+        deserunt quo repellendus, dolore quos fugit pariatur perferendis fuga eius repudiandae eaque at maiores
+        architecto facilis tempora possimus nulla?
+        Eaque hic ipsum eum iste accusamus id sunt eos assumenda, dolorem est. Corporis possimus libero ad, veritatis
+        facere, rerum non earum magnam exercitationem expedita, illum numquam. Ad sit asperiores dolor.</p>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Básico</li>
+          <li class="w3-padding-16">Planejamento </li>
+          <li class="w3-padding-16">10 horas de suporte</li>
+          <li class="w3-padding-16">Fotografia</li>
+          <li class="w3-padding-16">20% de desconto em móveis</li>
+          <li class="w3-padding-16">Bons negócios</li>
+          <li class="w3-padding-16">
+            <h2>Orçamento</h2>
+            <span class="w3-opacity">Algo aqui</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Consulte aqui</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Planejamento </li>
+          <li class="w3-padding-16">10 horas de suporte</li>
+          <li class="w3-padding-16">Fotografia</li>
+          <li class="w3-padding-16">20% de desconto em móveis</li>
+          <li class="w3-padding-16">Bons negócios</li>
+          <li class="w3-padding-16">
+            <h2>Orçamento</h2>
+            <span class="w3-opacity">Algo aqui</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Consulte aqui</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="w3-container" id="contact" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Contato.</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>Quer que estilizemos a sua casa? Preencha o formulário e preencha-me com os detalhes :) Adoramos conhecer novas
+        pessoas!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Nome</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>E-mail</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Mensagem</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Enviar
+          Mensagem</button>
+      </form>
+    </div>
+
+    <!-- End page content -->
+  </div>
+  <a target="_blank" href="https://wa.link/taikr4"
+      class="btn button-float d-flex align-items-center justify-content-center ">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  <!-- W3.CSS Container -->
+  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <p class="w3-right"><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-opacity">w3.css</a></p>
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+
+</body>
+
+</html>
