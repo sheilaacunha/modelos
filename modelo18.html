@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="./public/assets/img/favicon.png" type="image/x-icon" />
+    
     <title>Sheila Acunha - Desenvolvedora Web</title>
     <style>
         body {
@@ -23,70 +24,69 @@
         .mySlides {
             display: none
         }
-        
-   .button-float {
-      border-radius: 100%;
-      height: 60px;
-      width: 60px;
-      position: fixed;
-      padding: 0 !important;
-      font-size: 35px;
-      color: #fff;
-      background-color: #25d366;
-      border: none;
-      z-index: 1000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
 
-    .button-float::before,
-    .button-float::after {
-      content: '';
-      display: block;
-      position: absolute;
-      border: 2px double #25d366;
-      border-radius: 100%;
-      left: -5px;
-      right: -5px;
-      bottom: -5px;
-      top: -5px;
-      animation: animar 1.5s linear infinite;
-      opacity: 0;
-    }
+        .button-float {
+            border-radius: 100%;
+            height: 60px;
+            width: 60px;
+            position: fixed;
+            padding: 0 !important;
+            font-size: 35px;
+            color: #fff;
+            background-color: #25d366;
+            border: none;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .button-float::after {
-      animation-delay: .8s;
-    }
+        .button-float::before,
+        .button-float::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border: 2px double #25d366;
+            border-radius: 100%;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            top: -5px;
+            animation: animar 1.5s linear infinite;
+            opacity: 0;
+        }
 
-    .button-float {
-      bottom: 2rem;
-      right: 1rem;
-    }
+        .button-float::after {
+            animation-delay: .8s;
+        }
 
-    @keyframes animar {
-      0% {
-        transform: scale(0.5);
-        opacity: 0;
+        .button-float {
+            bottom: 2rem;
+            right: 1rem;
+        }
 
-      }
+        @keyframes animar {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
 
-      50% {
-        opacity: 1;
-      }
+            }
 
-      100% {
-        transform: scale(1.2);
-        opacity: 0;
-      }
-    }
+            50% {
+                opacity: 1;
+            }
 
-    .button-float:hover {
-      background-color: #25d366 !important;
-      color: #FFDE59;
-      box-shadow: 2px 2px 4px #FFDE59;
-    }
+            100% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
 
+        .button-float:hover {
+            background-color: #25d366 !important;
+            color: #FFDE59;
+            box-shadow: 2px 2px 4px #FFDE59;
+        }
     </style>
 </head>
 
@@ -292,9 +292,9 @@
     <!-- Image of location/map -->
     <img src="./public/assets/img/banda6.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
-  <a target="_blank" href="https://wa.link/taikr4"
-      class="btn button-float d-flex align-items-center justify-content-center ">
-      <i class="bi bi-whatsapp"></i>
+    <a target="_blank" href="https://wa.link/taikr4"
+        class="btn button-float d-flex align-items-center justify-content-center ">
+        <i class="bi bi-whatsapp"></i>
     </a>
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
